@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DEDE"
+    tools:context=".DetailFragment">
+
+
+    <TextView
+        android:id="@+id/tv_AndroidVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Android Version"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_VersionNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Android Version Number"
+        app:layout_constraintStart_toStartOf="@+id/tv_AndroidVersion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_AndroidVersion" />
+
+    <TextView
+        android:id="@+id/tv_APINo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="API Number"
+        app:layout_constraintStart_toStartOf="@+id/tv_AndroidVersion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_VersionNo" />
+
+    <TextView
+        android:id="@+id/tv_ReleaseYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Release Year"
+        app:layout_constraintStart_toStartOf="@+id/tv_AndroidVersion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_APINo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
